@@ -3,10 +3,10 @@
   "description": "Rescript bindings for Expo",
   "version": "40.3.2",
   "scripts": {
-    "build": "bsb -make-world",
-    "watch": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "clean-build": "bsb -clean-world -make-world"
+    "build": "rescript build ",
+    "watch": "rescript build -w",
+    "clean": "rescript clean",
+    "clean-build": "rescript clean && rescript build"
   },
   "license": "MIT",
   "keywords": [
@@ -24,20 +24,20 @@
   "devDependencies": {
     "babel-preset-expo": "^8.1.0",
     "@babel/core": "~7.9.0",
-    "bs-platform": "^9.0.2",
-    "expo": "^40.0.0",
-    "@rescript/react": "^0.10.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "rescript-react-native": "^0.64.2"
+    "rescript": "^11.0.1",
+    "expo": "^50.0.0",
+    "@rescript/react": "^0.12.0",
+    "react-native": "^0.73.2",
+    "rescript-react-native": "^0.72.0"
   },
   "bugs": "https://github.com/rescript-bindings/rescript-expo/issues",
   "peerDependencies": {
-    "@rescript/react": "^0.10.1",
-    "expo": "~40.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-web": "~0.13.12",
+    "@rescript/react": "^0.12.0",
+    "expo": "~50.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "^0.73.2",
+    "react-native-web": "~0.19.10",
     "rescript-react-native": "^0.64.2"
   }
 }
