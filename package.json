@@ -1,7 +1,7 @@
 {
   "name": "@rescript-bindings/expo",
   "description": "Rescript bindings for Expo",
-  "version": "40.3.2",
+  "version": "50.0.0",
   "scripts": {
     "build": "rescript build ",
     "watch": "rescript build -w",
@@ -38,6 +38,6 @@
     "react-dom": "18.2.0",
     "react-native": "^0.73.2",
     "react-native-web": "~0.19.10",
-    "rescript-react-native": "^0.64.2"
+    "rescript-react-native": "^0.72.0"
   }
 }
