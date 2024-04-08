@@ -6,12 +6,13 @@ type result = {
   size: option<int>,
 }
 
-type namedParameters
-// external namedParameters: (
-//   ~_type: string,
-//   ~multiple: bool,
-//   ~copyToCacheDirectory: bool,
-// ) => namedParameters = ""
+type documentPickerOptions
+external documentPickerOptions: (
+  @as("type")
+  ~_type: string,
+  ~multiple: bool,
+  ~copyToCacheDirectory: bool,
+) => documentPickerOptions = "DocumentPickerOptions"
 
 @module("expo-document-picker")
-external getDocumentAsync: namedParameters => Js.Promise.t<result> = "getDocumentAsync"
+external getDocumentAsync: documentPickerOptions => Js.Promise.t<result> = "getDocumentAsync"
