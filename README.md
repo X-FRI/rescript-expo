@@ -1,66 +1,57 @@
-<h3 align="center" style="font-weight:600">
-  rescript-expo
-</h3>
+<div align="center">
 
-<p align="center">
-  <a href="https://rescript-lang.org/">Rescript</a> bindings for <a href="https://expo.io">Expo</a>
-</p>
+<img src="./.github/logo.png" height="150">
 
----
+rescript-expo
 
-## Versioning
+*try to provide accurate [expo](https://expo.dev/) binding for [rescript](https://rescript-lang.org)*
 
-This library doesn't follow conventional semver. The version scheme is shown below, and you should track this library accordingly.
+</div>
 
-`<ExpoVersion>.<Major>.<Minor/Patch>`
-
-## Getting started
-
-Go into your project root & then install the requirements:
-
-```bash
-yarn add bs-platform --dev
-yarn add @rescript/react rescript-react-native @rescript-bindings/expo
-```
-
-Next, create a file named bsconfig.json at the same level at your package.json with the following content:
+# Status
 
 ```json
-{
-  "name": "my-rescript-expo-app",
-  "reason": {
-    "react-jsx": 3
-  },
-  "bsc-flags": ["-bs-super-errors"],
-  "bs-dependencies": ["@rescript/react", "rescript-react-native", "@rescript-bindings/expo"],
-  "sources": [
-    {
-      "dir": "src"
-    }
-  ],
-  "suffix": ".bs.js",
-  "refmt": 3,
-  "package-specs": {
-    "module": "es6",
-    "in-source": true
-  }
+"devDependencies": {
+  "babel-preset-expo": "^8.1.0",
+  "@babel/core": "~7.9.0",
+  "rescript": "^11.0.1",
+  "expo": "^50.0.0",
+  "@rescript/react": "^0.12.0",
+  "react-native": "^0.73.2",
+  "rescript-react-native": "^0.72.0"
+},
+"bugs": "https://github.com/rescript-bindings/rescript-expo/issues",
+"peerDependencies": {
+  "@rescript/react": "^0.12.0",
+  "expo": "~50.0.0",
+  "react": "18.2.0",
+  "react-dom": "18.2.0",
+  "react-native": "^0.73.2",
+  "react-native-web": "~0.19.10",
+  "rescript-react-native": "^0.72.0"
 }
 ```
 
-Next, add these scripts to your package.json:
+# LICENSE
 
-```json
-  "re:build": "bsb -make-world",
-  "re:watch": "bsb -make-world -w",
-  "re:build-clean": "bsb -clean-world -make-world",
-```
+MIT License
 
-Finally, make a folder named `src` and start writing your Rescript code in there. `yarn re:build` will compile the Rescript code in that folder for you to import and use in your Expo app's JS/TS code.
+Copyright (c) 2018 rescript-expo
 
-## Contributing
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Fork this repo, clone it onto your machine, install run `yarn` in the root directory. 
-Create a branch with `feature/` or `bugfix/` prefix make changes and open a PR to this repo.
-Happy hacking.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-_Credit: This project is based on the work started in [`reason-expo`](https://github.com/draftbit/reason-expo)._
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -15,11 +15,11 @@
     "react-native",
     "expo"
   ],
-  "homepage": "https://github.com/rescript-bindings/expo",
-  "author": "Myroslav Aleksieiev",
+  "homepage": "https://github.com/muqiuhan/expo",
+  "author": "Myroslav Aleksieiev, Muqiu Han",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rescript-bindings/expo"
+    "url": "https://github.com/muqiuhan/expo"
   },
   "devDependencies": {
     "babel-preset-expo": "^8.1.0",
