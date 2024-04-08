@@ -32,8 +32,6 @@ type permissionStatus =
   | @as("GRANTED") GRANTED
   | @as("UNDETERMINED") UNDETERMINED
 
-@module("expo-sensors") external permissionStatus: permissionStatus = "PermissionStatus"
-
 /** An object obtained by permissions get and request functions.
   *
   * canAskAgain: Indicates if user can be asked again for specific permission.
