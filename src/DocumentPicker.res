@@ -1,3 +1,8 @@
+/**
+  * expo-document-picker provides access to the system's UI for selecting documents from the available providers on the user's device.
+  * see: https://docs.expo.dev/versions/latest/sdk/document-picker/
+  */
+
 /** file: File object for the parity with web File API.
   * lastModified: Timestamp of last document modification.
   * mimeType: Document MIME type.
