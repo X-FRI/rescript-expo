@@ -10,14 +10,16 @@
   * size: Document size in bytes.
   * uri: An URI to the local document file.
   */
-type documentPickerAsset = {
-  name: string,
-  uri: string,
-  lastModified: option<int>,
-  mimeType: option<string>,
-  file: option<string>,
-  size: option<int>,
-}
+type documentPickerAsset
+
+external documentPickerAsset: (
+  ~name: string,
+  ~uri: string,
+  ~lastModified: option<int>,
+  ~mimeType: option<string>,
+  ~file: option<string>,
+  ~size: option<int>,
+) => documentPickerAsset = "DocumentPickerAsset"
 
 /** copyToCacheDirectory: If true, the picked file is copied to FileSystem.CacheDirectory,
   *   which allows other Expo APIs to read the file immediately.
@@ -47,4 +49,5 @@ external documentPickerOptions: (
   * If the user cancelled the document picking, the promise resolves to { type: 'cancel' }.
   */
 @module("expo-document-picker")
-external getDocumentAsync: documentPickerOptions => Js.Promise.t<documentPickerAsset> = "getDocumentAsync"
+external getDocumentAsync: documentPickerOptions => Js.Promise.t<documentPickerAsset> =
+  "getDocumentAsync"

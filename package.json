@@ -1,5 +1,5 @@
 {
-  "name": "@rescript-bindings/expo",
+  "name": "@muqiuhan/rescript-expo",
   "description": "Rescript bindings for Expo",
   "version": "50.0.0",
   "scripts": {
@@ -15,11 +15,11 @@
     "react-native",
     "expo"
   ],
-  "homepage": "https://github.com/muqiuhan/expo",
+  "homepage": "https://github.com/muqiuhan/rescript-expo",
   "author": "Myroslav Aleksieiev, Muqiu Han",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muqiuhan/expo"
+    "url": "https://github.com/muqiuhan/rescript-expo"
   },
   "devDependencies": {
     "babel-preset-expo": "^8.1.0",
@@ -30,7 +30,7 @@
     "react-native": "^0.73.2",
     "rescript-react-native": "^0.72.0"
   },
-  "bugs": "https://github.com/rescript-bindings/rescript-expo/issues",
+  "bugs": "https://github.com/muqiuhan/rescript-expo/issues",
   "peerDependencies": {
     "@rescript/react": "^0.12.0",
     "expo": "~50.0.0",
