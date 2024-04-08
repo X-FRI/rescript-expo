@@ -11,3 +11,4 @@ yarn-error.log
 .bsb.lock
 **/**/*.bs.js
 .watchmanconfig
+*.lock
